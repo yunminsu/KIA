@@ -1,0 +1,94 @@
+/* 공통 스타일 */
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+}
+
+
+/* 헤더 */
+header {
+  width: 100%;
+  /* background-color: orange; */
+  position: absolute;
+  top: 30px;
+  z-index: 9;
+
+}
+
+.headerinner {
+  width: 1853px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.headerinner .logo {
+
+}
+
+.navbar {
+  width: 40%;
+}
+
+.navbar > ul {
+  display: flex;
+}
+
+.logo {
+  width: 20%;
+
+}
+
+.logo > a {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.logo > a > img {
+  width: 102px;
+  height: 56px;
+}
+
+.sidebar {
+  width: 40%;
+}
+
+.sidebar > ul {
+  display: flex;
+  position: absolute;
+  right: 0px;
+}
+
+.navbar > ul > li > a, .sidebar > ul > li > a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  display: block;
+}
+
+/* 섹션 영역 */
+section {
+  
+}
+
+.visual {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../images/kv_rayev_contract_pc.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
