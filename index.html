@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity=sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
-
-  <div class="bg">
     <header>
       <div class="inner">
       <nav class="gnb">
@@ -35,7 +40,9 @@
           </li>
         </ul>
         <div class="logo">
-          <h1>기아</h1>
+          <a href="javascript:void(0)">
+            <img src="./images/logo_w.svg" alt="로고" class="logo-img">
+          </a>
         </div>
         <ul class="gnb-right">
           <li>
@@ -47,12 +54,59 @@
         </ul>
       </nav>
       </div>
-
-
-
-
     </header>
+
+  <section class="main-bg">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./images/kv_rayev_contract_pc.jpg" alt="레이">
+        <div class="slide-text">
+        <p>새로운 도심 엔트리</p>
+        <h2>The Kia Ray EV</h2>
+        <a href="javascript:void(0)">바로가기</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/kv_sorento_pe_20230818_pc.jpg" alt="소렌토">
+        <div class="slide-text">
+        <p>The Mainstream</p>
+        <h2>The new Sorento</h2>
+        <a href="javascript:void(0)">바로가기</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/kv_morning_pe_20230705_pc.jpg" alt="모닝">
+        <div class="slide-text">
+        <p>도심 밀착 모빌리티</p>
+        <h2>The new Morning</h2>
+        <a href="javascript:void(0)">바로가기</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/kv_rental_pc.jpg" alt="렌탈">
+        <div class="slide-text">
+        <p>스마트한 카 라이프의 시작! 기아렌터카</p>
+        <h2>기아렌터카 온라인 페이지</h2>
+        <a href="javascript:void(0)">바로가기</a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/kv_flagship_store_230615_pc.jpg" alt="스토어">
+        <div class="slide-text">
+        <p>가장 가까이에서 만나는 기아의 미래 모빌리티</p>
+        <h2>The Kia Ray EV</h2>
+        <a href="javascript:void(0)">바로가기</a>
+        </div>
+      </div>
+    </div>
   </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </section>
 
 
 
